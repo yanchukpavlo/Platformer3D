@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         EventsManager.instance.onChangeStateTrigger += ChangeStateTrigger;
     }
 
-    private void OnEnable()
+    private void OnDisable()
     {
         EventsManager.instance.onChangeStateTrigger -= ChangeStateTrigger;
     }

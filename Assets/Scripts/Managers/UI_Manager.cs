@@ -52,7 +52,7 @@ public class UI_Manager : MonoBehaviour
         EventsManager.instance.onChangeStateTrigger += InstanceChangeStateTrigger;
     }
 
-    private void OnEnable()
+    private void OnDisable()
     {
         EventsManager.instance.onJumpTrigger -= UpdateJump;
         EventsManager.instance.onEnemyDestroyTrigger -= UpdateEnemyDestroy;
